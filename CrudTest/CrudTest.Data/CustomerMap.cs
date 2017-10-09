@@ -1,5 +1,4 @@
 ﻿using CrudTest.Models;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 
 namespace CrudTest.Data
@@ -13,7 +12,7 @@ namespace CrudTest.Data
             HasKey(c => c.Id);
 
             Property(c => c.Id)
-                .HasColumnName("ID").HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+                .HasColumnName("ID");
 
             Property(c => c.Name)
                 .HasColumnName("NAME");

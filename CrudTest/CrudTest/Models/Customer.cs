@@ -6,15 +6,15 @@ namespace CrudTest.Models
     {
         #region Properties
 
-        public int Id { get; set; }
+        public virtual int Id { get; set; }
 
-        public string Name { get; set; }
+        public virtual string Name { get; set; }
 
-        public string Cpf { get; set; }
+        public virtual string Cpf { get; set; }
 
-        public DateTime Birth { get; set; }
+        public virtual DateTime Birth { get; set; }
 
-        public string Gender { get; set; }
+        public virtual string Gender { get; set; }
 
         #endregion Properties
 
